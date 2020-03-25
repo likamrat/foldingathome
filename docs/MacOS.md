@@ -1,34 +1,32 @@
-# Download & Windows Install
+# Download & MacOS Install
 
 Honestly, this is very straight forward; you [download](https://foldingathome.org/start-folding/) the client from the website and install it with few clicks. Here are some screenshots. 
 
-![](../img/Windows/website01.png)
+![](../img/MacOS/website01.png)
 
-![](../img/Windows/website02.png)
+![](../img/MacOS/website02.png)
 
-![](../img/Windows/website03.png)
+![](../img/MacOS/website03.png)
 
-![](../img/Windows/install01.png)
+![](../img/MacOS/install01.png)
 
-![](../img/Windows/install02.png)
+![](../img/MacOS/install02.png)
 
-![](../img/Windows/install03.png)
+![](../img/MacOS/install03.png)
 
-![](../img/Windows/install04.png)
+![](../img/MacOS/install04.png)
 
-![](../img/Windows/install05.png)
+![](../img/MacOS/install05.png)
+
+![](../img/MacOS/install06.png)
 
 # Configure & Start folding
 
-If you are getting a Windows Defender Firewall message, go ahead and allow the FAH client to communicate. 
-
-![](../img/Windows/fw.png)
-
 Once you are done with the installation, a new web page will pop, asking you to either fold as "Anonymous" or set up an identity. We want to help by folding as part the Microsoft team so let's set up an identity and join the Microsoft group (#999)
 
-![](../img/Windows/folding01.png)
+![](../img/MacOS/folding01.png)
 
-![](../img/Windows/folding02.png)
+![](../img/MacOS/folding02.png)
 
 Once you hit the "Save" button, your machine will start the folding process. 
 
@@ -36,7 +34,7 @@ Once you hit the "Save" button, your machine will start the folding process.
 
 ![](../img/Windows/folding03.png)
 
-![](../img/Windows/folding04.png)
+![](../img/MacOS/folding03.png)
 
 # How does that impact my machine?
 
@@ -46,7 +44,7 @@ You can move the level of "Power" the client is using to fold as well as configu
 
 In the screenshot below, you can how moving the Power level to "Full" hitting all the CPU cores on my machine.  
 
-![](../img/Windows/cpu.png)
+![](../img/MacOS/cpu.png)
 
 # I closed my browser and I want to re-open the web client page
 
