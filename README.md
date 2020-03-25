@@ -1,4 +1,4 @@
-# FOLDING@HOME - Microsoft for the win!
+# FOLDING@HOME - Microsoft fight on COVID-19
 
 From the FAH team [website](https://foldingathome.org/about/):
 
@@ -10,7 +10,7 @@ The FAH team are really the experts! Visit the [FAQ page](https://foldingathome.
 
 ## Why did I created this repo?
 
-I want to contribute the effort of raising awareness as well making sure people can deploy and start folding an easy fashion as fast as possible. 
+I wanted to contribute to the effort of raising awareness as well making sure people can deploy and start folding an easy fashion as fast as possible. 
 
 ## Let's get started
 
