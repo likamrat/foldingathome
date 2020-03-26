@@ -81,4 +81,4 @@ sudo rm -rf /var/lib/apt/lists/*
 
 sudo cp config.xml /opt/fahclient && /
     cd /opt/fahclient && /
-    FAHClient
+    ./FAHClient
