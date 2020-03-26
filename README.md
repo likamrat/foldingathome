@@ -10,7 +10,7 @@ The FAH team are really the experts! Visit the [FAQ page](https://foldingathome.
 
 ## Why did I created this repo?
 
-I wanted to contribute to the effort of raising awareness as well making sure people can deploy and start folding an easy fashion as fast as possible. 
+I wanted to contribute to the effort fighting COVID-19, raising awareness as well as making sure people can deploy and start folding an easy fashion as fast as possible. 
 
 ## Let's get started
 
