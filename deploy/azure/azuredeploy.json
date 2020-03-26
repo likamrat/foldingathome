@@ -244,7 +244,7 @@
             "fileUris": [
               "https://github.com/likamrat/foldingathome/blob/master/deploy/azure/install_fah.sh"
             ],
-            "commandToExecute": "sh install_fah.sh"
+            "commandToExecute": "sudo sh install_fah.sh"
           }
         }
       }
