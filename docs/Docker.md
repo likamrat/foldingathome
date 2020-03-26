@@ -7,15 +7,16 @@ The entire point is to deploy an isolated environment without having anything in
 
 * The Docker image is stored in an [Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/services/container-registry/#security) with no Anonymous access enabled. Prior to running the container, log in to the mentioned ACR:
 
-        <code>docker login -u pulltoken -p 4A=jBw69CoMNqLq2Lqrb2YVapQWPC19e liordevacr.azurecr.io</code>
+```docker login -u pulltoken -p 4A=jBw69CoMNqLq2Lqrb2YVapQWPC19e liordevacr.azurecr.io```
 
 # Running to container
 
 To run the container, simply run below command in your terminal.
 
-    <code>docker run \
-    --name folding-at-home \
-    -p 7396:7396 \
-    -p 36330:36330 \
-    --restart unless-stopped \
-    liordevacr.azurecr.io/msfolding/msfolding:latest</code>
+
+```docker run \
+ --name folding-at-home \
+ -p 7396:7396 \
+ -p 36330:36330 \
+ --restart unless-stopped \
+ liordevacr.azurecr.io/msfolding/msfolding:latest```
