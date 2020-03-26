@@ -30,7 +30,7 @@ As you can see, at the beginning of the container run, the following errors will
 "***ERROR:WU00:FS00:Exception: Could not get an assignment***"  
 "***ERROR:WU00:FS00:Exception: Server did not assign work unit***"
 
-Do not worry about this! It simply means you still haven't assigned with a server to with FOLDING@HOME. 
+Do not worry about this! It simply means you still haven't been assigned with a server to with FOLDING@HOME. 
 
 # It's alive!
 
