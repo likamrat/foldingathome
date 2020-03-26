@@ -13,9 +13,39 @@ The entire point is to deploy an isolated environment without having anything in
 
 To run the container, simply run below command in your terminal.
 
-```docker run \
- --name folding-at-home \
- -p 7396:7396 \
- -p 36330:36330 \
- --restart unless-stopped \
- liordevacr.azurecr.io/msfolding/msfolding:latest
+```docker run --name folding-at-home -p 7396:7396 -p 36330:36330 --restart unless-stopped liordevacr.azurecr.io/msfolding/msfolding:latest```
+
+This how various stages of the run should look like:
+
+![](../img/Docker/docker_run01.png)
+
+![](../img/Docker/docker_run02.png)
+
+![](../img/Docker/docker_run03.png)
+
+## Why am I seeing "Could not get an assignment" errors?
+
+As you can see, at the beginning of the container run, the following errors will appear: 
+
+"***ERROR:WU00:FS00:Exception: Could not get an assignment***"  
+"***ERROR:WU00:FS00:Exception: Server did not assign work unit***"
+
+Do not worry about this! It simply means you still haven't assigned with a server to with FOLDING@HOME. 
+
+# It's alive!
+
+By default, the container is to configure to expose port 7396 and will allow you to access *http://localhost:7396* from your browser. 
+
+![](../img/Docker/web_01.png)
+
+Now you can see that everything up and running and you are folding on behalf of Microsoft (team 999). 
+
+# How do I stop this thing?
+
+Yes, this container is a CPU hogger so to kill and delete it run the following command:
+
+```docker rm -f folding-at-home```
+
+***Optional***: To remove the Docker image from your machine, run the following command:
+
+```docker rmi liordevacr.azurecr.io/msfolding/msfolding:latest```
