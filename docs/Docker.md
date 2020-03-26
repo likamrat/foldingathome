@@ -13,10 +13,9 @@ The entire point is to deploy an isolated environment without having anything in
 
 To run the container, simply run below command in your terminal.
 
-
 ```docker run \
  --name folding-at-home \
  -p 7396:7396 \
  -p 36330:36330 \
  --restart unless-stopped \
- liordevacr.azurecr.io/msfolding/msfolding:latest```
+ liordevacr.azurecr.io/msfolding/msfolding:latest
