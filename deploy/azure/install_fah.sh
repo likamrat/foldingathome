@@ -78,4 +78,5 @@ EOT
 
 sudo chmod +x run_fah.sh
 
-at now + 20 seconds -f run_fah.sh
+at now + 1 minutes -f run_fah.sh
+#
