@@ -60,12 +60,10 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     configuration lines: -->
 
     <!-- HTTP Server -->
-
-    <allow v='127.0.0.1 0/0'/>
-
     <!-- Web Server -->
-
-    <web-allow v='127.0.0.1 0/0'/>
+   
+    <allow>127.0.0.1 0/0</allow>
+    <web-allow>127.0.0.1 0/0</web-allow>
 
     <!-- Where x.x.x.x is the IP address of the computer which should be granted
     remote access.  You may also need to open port 7396 on your firewall.
@@ -78,11 +76,6 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
  
 </config>
 EOT
-
-# curl -l https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/config.xml -o ~/config.xml
-# sudo cp ~/config.xml /opt/fahclient && /
-#     cd /opt/fahclient && /
-#     ./FAHClient
 
 # echo "@reboot /opt/fahclient/FAHClient" | crontab -
 # sleep 20 ; reboot

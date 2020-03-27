@@ -39,12 +39,10 @@
     configuration lines: -->
 
     <!-- HTTP Server -->
-
-    <allow v='127.0.0.1 0/0'/>
-
     <!-- Web Server -->
-
-    <web-allow v='127.0.0.1 0/0'/>
+   
+    <allow>127.0.0.1 0/0</allow>
+    <web-allow>127.0.0.1 0/0</web-allow>
 
     <!-- Where x.x.x.x is the IP address of the computer which should be granted
     remote access.  You may also need to open port 7396 on your firewall.
