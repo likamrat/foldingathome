@@ -18,7 +18,7 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_D2s_v3",
+        "defaultValue": "Standard_B4ms",
         "metadata": {
           "description": "The size of the virtual machines used when provisioning"
         }
@@ -30,7 +30,7 @@
           "18.04-LTS"
         ],
         "metadata": {
-          "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values: 12.04.5-LTS, 14.04.5-LTS, 15.10."
+          "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
         }
       },
       "location": {
@@ -172,7 +172,7 @@
                       "description": "Allow FAM Web Access",
                       "protocol": "Tcp",
                       "sourcePortRange": "*",
-                      "destinationPortRange": "7389",
+                      "destinationPortRange": "7396",
                       "sourceAddressPrefix": "Internet",
                       "destinationAddressPrefix": "*",
                       "access": "Allow",

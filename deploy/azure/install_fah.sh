@@ -83,3 +83,6 @@ EOT
 # sudo cp ~/config.xml /opt/fahclient && /
 #     cd /opt/fahclient && /
 #     ./FAHClient
+
+echo "@reboot /opt/fahclient/FAHClient" | crontab -
+sudo reboot now
