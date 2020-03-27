@@ -23,20 +23,20 @@
     All slots in a configuration MUST have unique ids.
    -->
 
-  Granting Remote FAHControl Access
+  <!-- Granting Remote FAHControl Access
     To grant remote access to FAHControl and the remote command server add
-    the following:
+    the following: -->
 
        <allow v='127.0.0.1 0/0'/>
       <!-- <password>PASS</password> -->
 
-    Where x.x.x.x is the IP address of the computer which should be granted
+    <!-- Where x.x.x.x is the IP address of the computer which should be granted
     remote access and PASS is you choose to further secure the connection.
  
 
   Granting Remote Web Access
     If you would like to grant remote Web access then you need these two
-    configuration lines:
+    configuration lines: -->
 
     <!-- HTTP Server -->
 
@@ -46,13 +46,13 @@
 
     <web-allow v='127.0.0.1 0/0'/>
 
-    Where x.x.x.x is the IP address of the computer which should be granted
+    <!-- Where x.x.x.x is the IP address of the computer which should be granted
     remote access.  You may also need to open port 7396 on your firewall.
 
     You can then access the Web interface remotely by going to this address:
 
       http://y.y.y.y:7396/
 
-    Where y.y.y.y is the IP address of this computer.
+    Where y.y.y.y is the IP address of this computer. -->
  
 </config>
