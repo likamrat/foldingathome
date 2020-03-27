@@ -25,8 +25,9 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
   <team value="999"/>         <!-- Your team number -->
   <passkey value=""/>       <!-- 32 hexadecimal characters if provided -->
 
-  <power value="light"/>
-  <gpu value="false"/>      <!-- If true, attempt to autoconfigure GPUs -->
+  <power value="full"/>
+  <gpu value="false"/>
+  <smp value="true"/>      <!-- If true, attempt to autoconfigure GPUs -->
   <fold-anon value="false"/>
 
   <!-- Folding Slots
@@ -65,8 +66,16 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     <allow v='127.0.0.1 0/0'/>
     <web-allow v='127.0.0.1 0/0'/>
 
-</config>    
+</config>
 EOT
 
 echo "@reboot cd /opt/fahclient && ./FAHClient" | crontab -
-sleep 20 ; sudo reboot
+
+sudo cat <<EOT >> run_fah.sh
+#!/bin/bash
+cd /opt/fahclient && ./FAHClient
+EOT
+
+sudo chmod +x run_fah.sh
+
+at now + 20 seconds -f run_fah.sh
