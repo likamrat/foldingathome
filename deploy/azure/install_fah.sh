@@ -33,11 +33,11 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     No folding slot configuration is necessary.  The client will
     automaticlaly choose a good configuration for you.  However, here
     are some examples:
-  
+
       <slot id="0" type="CPU"/>
 
     or
-    
+
       <slot id="0" type="CPU"/>
       <slot id="1" type="GPU"/>
 
@@ -53,7 +53,7 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
 
     <!-- Where x.x.x.x is the IP address of the computer which should be granted
     remote access and PASS is you choose to further secure the connection.
- 
+
 
   Granting Remote Web Access
     If you would like to grant remote Web access then you need these two
@@ -61,20 +61,9 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
 
     <!-- HTTP Server -->
     <!-- Web Server -->
-   
-    <allow>127.0.0.1 0/0</allow>
-    <web-allow>127.0.0.1 0/0</web-allow>
 
-    <!-- Where x.x.x.x is the IP address of the computer which should be granted
-    remote access.  You may also need to open port 7396 on your firewall.
-
-    You can then access the Web interface remotely by going to this address:
-
-      http://y.y.y.y:7396/
-
-    Where y.y.y.y is the IP address of this computer. -->
- 
-</config>
+    <allow v='127.0.0.1 0/0'/>
+    <web-allow v='127.0.0.1 0/0'/>
 EOT
 
 # echo "@reboot /opt/fahclient/FAHClient" | crontab -

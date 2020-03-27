@@ -8,13 +8,7 @@
         "metadata": {
           "description": "The name of the Virtual Machine"
         }
-      },
-    "dnsLabelPrefix": {
-      "type": "string",
-      "metadata": {
-        "description": "DNS Label for the Public IP. Must be lowercase. It should match with the following regular expression: ^[a-z][a-z0-9-]{1,61}[a-z0-9]$ or it will raise an error."
-        }
-      },        
+      },       
       "adminUsername": {
         "type": "string",
         "defaultValue": "folding",
@@ -97,10 +91,7 @@
           "name": "Basic"
         },    
         "properties": {
-          "publicIPAllocationMethod": "Static",
-          "dnsSettings": {
-          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
-          }
+          "publicIPAllocationMethod": "Static"
         }
       },
       {
@@ -255,11 +246,5 @@
           }
         }
       }
-    ],
-    "outputs": {
-    "fqdn": {
-    "type": "string",
-    "value": "[if(equals(parameters('vmName'), 'app'), reference(resourceId('Microsoft.Network/publicIPAddresses', 'publicIPAddressName')).dnsSettings.fqdn, 'FQDN not available')]"
-    }
-   }
+    ]
 }
