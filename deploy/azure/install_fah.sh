@@ -84,5 +84,5 @@ EOT
 #     cd /opt/fahclient && /
 #     ./FAHClient
 
-echo "@reboot /opt/fahclient/FAHClient" | crontab -
-sleep 20 ; reboot
+# echo "@reboot /opt/fahclient/FAHClient" | crontab -
+# sleep 20 ; reboot
