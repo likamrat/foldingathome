@@ -18,7 +18,7 @@ sudo apt-get clean autoclean && \
 sudo apt-get autoremove --yes && \
 sudo rm -rf /var/lib/apt/lists/*
 
-sudo cat <<EOT >> config.xml
+sudo cat <<EOT >> ~/config.xml
 <config>
   <!-- User Information -->
   <user value="Anonymous"/> <!-- Enter your user name here -->
@@ -80,6 +80,6 @@ sudo cat <<EOT >> config.xml
 EOT
 
 # curl -l https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/config.xml -o config.xml
-# sudo cp config.xml /opt/fahclient && /
+sudo cp ~/config.xml /opt/fahclient && /
 #     cd /opt/fahclient && /
 #     ./FAHClient
