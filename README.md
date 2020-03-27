@@ -14,7 +14,7 @@ I wanted to contribute to the effort fighting COVID-19, raising awareness as wel
 
 ## Let's get started
 
-I have created multiple instructions and ways to deploy the FAH client. Some are manual and very straight forward, and also just a bit more advanced one. Here are the scenarios and the ways to get started:
+I have created multiple instructions on how to deploy the FAH client based on the deployment scenarios below.
 
 * [I am a Windows user and just want to install the client and start folding](docs/Windows.md)
 * [I am a MacOS user and just want to install the client and start folding](docs/MacOS.md)
