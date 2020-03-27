@@ -54,4 +54,6 @@ Notice the warning saying "Quitting the browser will not stop folding. Folding h
 
 # I am done, what now?
 
-Nothing really. The more you are folding the more you are contributing so keep at it as long as you want - it is really up to you. 
+Nothing really. The more you are folding the more you are contributing so keep at it as long as you want - it is really up to you.
+
+To stop processing, just click "Stop Folding". 
