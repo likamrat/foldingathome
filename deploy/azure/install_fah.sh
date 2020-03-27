@@ -18,7 +18,7 @@ sudo apt-get clean autoclean && \
 sudo apt-get autoremove --yes && \
 sudo rm -rf /var/lib/apt/lists/*
 
-curl -l https://github.com/likamrat/foldingathome/blob/master/deploy/azure/config.xml -o config.xml
+curl -l https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/config.xml -o config.xml
 sudo cp config.xml /opt/fahclient && /
     cd /opt/fahclient && /
     ./FAHClient
