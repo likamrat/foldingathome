@@ -64,7 +64,9 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
 
     <allow v='127.0.0.1 0/0'/>
     <web-allow v='127.0.0.1 0/0'/>
+
+</config>    
 EOT
 
-# echo "@reboot /opt/fahclient/FAHClient" | crontab -
-# sleep 20 ; reboot
+echo "@reboot cd /opt/fahclient && ./FAHClient" | crontab -
+sleep 20 ; sudo reboot
