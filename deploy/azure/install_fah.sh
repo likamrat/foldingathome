@@ -81,5 +81,5 @@ EOT
 
 # curl -l https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/config.xml -o config.xml
 sudo cp ~/config.xml /opt/fahclient && /
-#     cd /opt/fahclient && /
-#     ./FAHClient
+    cd /opt/fahclient && /
+    ./FAHClient
