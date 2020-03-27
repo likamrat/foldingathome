@@ -238,11 +238,11 @@
         "properties": {
           "publisher": "Microsoft.Azure.Extensions",
           "type": "CustomScript",
-          "typeHandlerVersion": "2.0",
+          "typeHandlerVersion": "2.1",
           "autoUpgradeMinorVersion": true,
           "settings": {
             "fileUris": ["https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/install_fah.sh"],  
-            "commandToExecute": "sudo sh install_fah.sh"
+            "commandToExecute": "sh install_fah.sh"
           }
         }
       }
