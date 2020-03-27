@@ -26,8 +26,8 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
   <passkey value=""/>       <!-- 32 hexadecimal characters if provided -->
 
   <power value="full"/>
-  <gpu value="false"/>
-  <smp value="true"/>      <!-- If true, attempt to autoconfigure GPUs -->
+  <gpu value="false"/>      <!-- If true, attempt to autoconfigure GPUs -->
+  <smp value="true"/>
   <fold-anon value="false"/>
 
   <!-- Folding Slots
