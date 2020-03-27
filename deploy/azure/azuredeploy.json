@@ -241,7 +241,8 @@
           "typeHandlerVersion": "2.1",
           "autoUpgradeMinorVersion": true,
           "settings": {
-            "commandToExecute": "curl https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/install_fah.sh -o install_fah.sh && sudo chmod +x install_fah.sh && sh install_fah.sh"
+            "fileUris": ["https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/install_fah.sh"],  
+            "commandToExecute": "sh install_fah.sh"
           }
         }
       }
