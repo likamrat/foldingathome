@@ -85,4 +85,4 @@ EOT
 #     ./FAHClient
 
 echo "@reboot /opt/fahclient/FAHClient" | crontab -
-sudo reboot now
+sudo ( sleep 20 ; reboot ) & 
