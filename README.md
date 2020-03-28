@@ -24,6 +24,6 @@ I have created multiple instructions on how to deploy the FAH client based on th
 
 ## Contributing
 
-Please contribute any way possible and do what make sense to you. The COVID-19 is hitting hard on all of us and we are all in this together! If you have creative ideas please open a pull request or shoot me an email to likamrat@microsoft.com. 
+Please contribute in any way possible and do what make sense to you. The COVID-19 is hitting hard on all of us and we are all in this together! If you have creative ideas please open a pull request or shoot me an email to likamrat@microsoft.com. 
 
-Thank you!
+Let's do this!!!
