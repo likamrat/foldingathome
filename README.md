@@ -4,7 +4,7 @@ From the FAH team [website](https://foldingathome.org/about/):
 
 "Folding@home (FAH or F@h) is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics."
 
-The (FAH Github repo)(https://github.com/FoldingAtHome/coronavirus) had additional details about it's implementation for the COVID-19.
+The [FAH GitHub repo](https://github.com/FoldingAtHome/coronavirus) had additional details about it's implementation for the COVID-19.
 
 ## How does it work?
 
