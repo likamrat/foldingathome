@@ -1,4 +1,4 @@
-# FOLDING@HOME - Microsoft fight on COVID-19
+# FOLDING@HOME Team 999 - Microsoft fight on COVID-19
 
 From the FAH team [website](https://foldingathome.org/about/):
 
