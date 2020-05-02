@@ -42,7 +42,7 @@ Add the following to the end of the configuration located at ```/etc/fahclient/c
 <web-allow>127.0.0.1 x.x.x.x</web-allow>
 ```
 
-! When editing the config.xml file for the first time, the file may be modified by the FAHClient before you can save your changes.  If this happens, close and reopen the config.xml file before adding and saving your changes.
+***Note***: When editing the config.xml file for the first time, the file may be modified by the FAHClient before you can save your changes.  If this happens, close and reopen the config.xml file before adding and saving your changes.
 
 # Remotely Access Web Client
 
