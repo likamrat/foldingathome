@@ -11,10 +11,24 @@ Install the FAHClient
 ```sudo dpkg -i --force-depends fahclient_7.6.9_amd64.deb```
 
 Screenshot Username
+
+![](../img/UbuntuServer/configure-username.png)
+
 Screenshot Team
+
+![](../img/UbuntuServer/configure-team.png)
+
 Screenshot Passkey
-Screenshot Resources
+
+![](../img/UbuntuServer/configure-passkey.png)
+
+Screenshot System Resources
+
+![](../img/UbuntuServer/configure-resources.png)
+
 Screenshot Start Automatically
+
+![](../img/UbuntuServer/configure-startup.png)
 
 # Remotely Access Web Client
 
