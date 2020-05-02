@@ -10,33 +10,31 @@ Install the FAHClient
 
 ```sudo dpkg -i --force-depends fahclient_7.6.9_amd64.deb```
 
-Screenshot Username
+Enter the name to be displayed on the public leaderboard.
 
 ![](../img/UbuntuServer/configure-username.png)
 
-Screenshot Team
+Enter the team code provided by your manager or 999 to join the Microsoft team.
 
 ![](../img/UbuntuServer/configure-team.png)
 
-Screenshot Passkey
+Optionally enter a passkey.
 
 ![](../img/UbuntuServer/configure-passkey.png)
 
-Screenshot System Resources
+Enter the amount of system resources to consume. This value can be changed at a later date.
 
 ![](../img/UbuntuServer/configure-resources.png)
 
-Screenshot Start Automatically
+Configure the FAHClient to start automatically.
 
 ![](../img/UbuntuServer/configure-startup.png)
 
 # Remotely Access Web Client
 
-Open the FAHClient config.xml file in the path below with the editor of your choice.
+By default, the web configuration client is not available remotely.  To view the status and change the configuration of the FAHClient, it is necessary to configure remote access.
 
-```/etc/fahclient/config.xml```
-
-Add the following to the end of the configuration, replacing x.x.x.x with the IP address of the computer which should be granted remote access.
+Add the following to the end of the configuration located at ```/etc/fahclient/config.xml```, replacing x.x.x.x with the IP address of the computer which should be granted remote access.
 
 ```
 <!-- Grant Remote Access -->
@@ -50,7 +48,7 @@ Add the following to the end of the configuration, replacing x.x.x.x with the IP
 
 Open a web browser and navigate to http://y.y.y.y:7396/ where y.y.y.y is the address of your Ubuntu Server.
 
-Screenshot of Web Client
+![](../img/UbuntuServer/web-client.png)
 
 # Reviewing Log Files
 
@@ -58,4 +56,8 @@ Review the FAHClient log file to ensure there are no errors and you downloaded w
 
 ```sudo cat /var/lib/fahclient/log.txt```
 
-Screenshot of Log File
+![](../img/UbuntuServer/log-file.png)
+
+! If your Ubuntu server is behind a Sophos UTM firewall, you may see the following error in the log file. To correct this error, add a Web Protection exception for ```^https?://[A-Za-z0-9.-]*\.foldingathome\.org/```.
+
+![](../img/UbuntuServer/log-file.png)
