@@ -58,6 +58,6 @@ Review the FAHClient log file to ensure there are no errors and you downloaded w
 
 ![](../img/UbuntuServer/log-file.png)
 
-***Note***: If your Ubuntu server is behind a Sophos UTM firewall, you may see the following error in the log file. To correct this error, add a Transparent Mode Skiplist exception in Web Protection your Ubuntu server.
+***Note***: If your Ubuntu server is behind a Sophos UTM firewall, you may see the following error in the log file. To correct this error, add a Transparent Mode Skiplist exception in Web Protection for your Ubuntu server.
 
 ![](../img/UbuntuServer/error-core-package-header.png)
