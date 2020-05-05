@@ -25,3 +25,5 @@ jobs:
       with:
         name: nupkgs
         path: src/sdks/cs/FoldingAtHome/nupkgs
+    - name: Publish
+      run: dotnet nuget push src/sdks/cs/FoldingAtHome/nupkgs/FoldingAtHome.0.1.$GITHUB_RUN_NUMBER.nupkg --api-key ${{ secrets.NUGET_API_KEY }}
