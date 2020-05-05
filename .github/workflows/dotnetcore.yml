@@ -24,4 +24,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: nupkgs
-        path: src/sdks/cs/FoldingAtHome/FoldingAtHome/nupkgs
+        path: src/sdks/cs/FoldingAtHome/nupkgs
