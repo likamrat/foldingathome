@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -9,18 +10,32 @@ namespace FoldingAtHome
     {
         #region props
 
-        [JsonPropertyName("wus")]
+        [JsonProperty("wus")]
         public int WorkUnits { get; set; }
-        [JsonPropertyName("name")]
+        
+        [JsonProperty("name")]
         public string Name { get; set; }
-        [JsonPropertyName("rank")]
+        
+        [JsonProperty("rank")]
         public int? Rank { get; set; }
-        [JsonPropertyName("credit")]
+        
+        [JsonProperty("credit")]
         public int Credit { get; set; }
-        [JsonPropertyName("team")]
+        
+        [JsonProperty("team")]
         public int Team { get; set; }
-        [JsonPropertyName("id")]
+        
+        [JsonProperty("id")]
         public int Id { get; set; }
+
+        #endregion
+
+        #region overrides
+
+        public override string ToString()
+        {
+            return string.Format("{0} | {1}", Name, Credit);
+        }
 
         #endregion
     }

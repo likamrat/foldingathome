@@ -21,24 +21,41 @@ namespace FoldingAtHome
 
         #region props
 
-        [JsonPropertyName("wus")]
+        [JsonProperty("wus")]
         public int WorkUnits { get; set; }
-        [JsonPropertyName("donors")]
+        
+        [JsonProperty("donors")]
         public List<Donor> Donors { get; set; }
-        [JsonPropertyName("rank")]
+        
+        [JsonProperty("rank")]
         public int Rank { get; set; }
-        [JsonPropertyName("total_teams")]
+        
+        [JsonProperty("total_teams")]
         public int TotalTeams { get; set; }
-        [JsonPropertyName("active_50")]
+        
+        [JsonProperty("active_50")]
         public int ActiveCpus { get; set; }
-        [JsonPropertyName("last")]
+        
+        [JsonProperty("last")]
         public DateTime TimeStamp { get; set; }
-        [JsonPropertyName("name")]
+        
+        [JsonProperty("name")]
         public string Name { get; set; }
-        [JsonPropertyName("credit")]
+        
+        [JsonProperty("credit")]
         public int Score { get; set; }
-        [JsonPropertyName("team")]
+        
+        [JsonProperty("team")]
         public int Id { get; set; }
+
+        #endregion
+
+        #region overrides
+
+        public override string ToString()
+        {
+            return string.Format("{0} | {1}", Name, Score);
+        }
 
         #endregion
 
