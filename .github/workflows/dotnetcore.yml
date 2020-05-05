@@ -14,8 +14,8 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore **/*.csproj
+      run: dotnet restore src/sdks/cs/FoldingAtHome.Sdk.sln
     - name: Build
-      run: dotnet build **/*.csproj --configuration Release --no-restore
+      run: dotnet build src/sdks/cs/FoldingAtHome.Sdk.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test **/*.Tests.csproj  --no-restore --verbosity normal
+      run: dotnet test src/sdks/cs/FoldingAtHome.Test/FoldingAtHome.Test.csproj  --no-restore --verbosity normal
