@@ -11,11 +11,21 @@ The entire point is to deploy an isolated environment without having anything in
 
 # Running to container
 
-To run the container, simply run below command in your terminal.
+To run the container, simply run below command in your terminal:
+
+```docker run --name folding-at-home -p 7396:7396 -p 36330:36330 --restart unless-stopped -d liordevacr.azurecr.io/msfolding/msfolding:latest```
+
+This will run the docker image as a deamon process, without showing any log output. 
+
+To view the logs, either [download and use the Docker Desktop application](https://www.docker.com/products/docker-desktop), or run the following command (using `CTRL+C` to quit following the logs):
+
+```docker logs --follow folding-at-home```
+
+Alternatively, to view the log output, run the following command to output the logs to the same window (noting you cannot ever close this window without killing the image):
 
 ```docker run --name folding-at-home -p 7396:7396 -p 36330:36330 --restart unless-stopped liordevacr.azurecr.io/msfolding/msfolding:latest```
 
-This how various stages of the run should look like:
+This how various stages of the logs should look like:
 
 ![](../img/Docker/docker_run01.png)
 
@@ -40,9 +50,21 @@ By default, the container is to configure to expose port 7396 and will allow you
 
 Now you can see that everything up and running and you are folding on behalf of Microsoft (team 999). 
 
-# How do I stop this thing?
+# How do I control this thing?
 
-Yes, this container is a CPU hogger so to kill and delete it run the following command:
+Yes, this container is a CPU hogger, so controlling it is crtical! 
+
+Your options include:
+1. Open the web control at *http://localhost:7396* and use the available controls (can you see the giant "Stop Folding" button?). You can also configure other settings here. 
+2. Stop/start: `docker stop folding-at-home` and `docker start folding-at-home` 
+3. Use the Docker Desktop application to stop/start (there is no pause option in the UI)
+4. Pause/unpause: `docker pause folding-at-home` and `docker unpause folding-at-home`
+
+In theory, the pause method will be quicker to continue processing from where it left off, but does cause a clock skew in the folding - so use it only for 'short' pauses, otherwise just use the stop/start method.
+
+# How do I get rid of this thing?
+
+To kill and delete the running instance of the image, run the following command:
 
 ```docker rm -f folding-at-home```
 
