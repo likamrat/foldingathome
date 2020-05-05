@@ -23,10 +23,10 @@ jobs:
     - name: Test
       run: dotnet test src/sdks/cs/FoldingAtHome.Test/FoldingAtHome.Test.csproj  --no-restore --verbosity normal
     - name: Pack
-      run: dotnet pack src/sdks/cs/FoldingAtHome/FoldingAtHome.csproj -p:PackageVersion=0.1.$GITHUB_RUN_NUMBER  --no-restore --no-build --verbosity normal --output src/sdks/cs/FoldingAtHome/nupkgs
+      run: dotnet pack src/sdks/cs/FoldingAtHome/FoldingAtHome.csproj -p:PackageVersion=0.2.$GITHUB_RUN_NUMBER  --no-restore --no-build --verbosity normal --output src/sdks/cs/FoldingAtHome/nupkgs
     - uses: actions/upload-artifact@v2
       with:
         name: nupkgs
         path: src/sdks/cs/FoldingAtHome/nupkgs
     - name: Publish
-      run: dotnet nuget push src/sdks/cs/FoldingAtHome/nupkgs/FoldingAtHome.0.1.$GITHUB_RUN_NUMBER.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push src/sdks/cs/FoldingAtHome/nupkgs/FoldingAtHome.0.2.$GITHUB_RUN_NUMBER.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
