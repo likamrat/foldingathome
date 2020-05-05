@@ -20,6 +20,7 @@ I have created multiple instructions on how to deploy the FAH client based on th
 
 * [I am a Windows user and just want to install the client and start folding](docs/Windows.md)
 * [I am a MacOS user and just want to install the client and start folding](docs/MacOS.md)
+* [I am an Ubuntu user and just want to install the client and start folding](docs/Ubuntu.md)
 * [I don't want to install anything locally but I'm cool with deploying a Docker container](docs/Docker.md)
 * [I want to use a "Ready-to-go" Azure VM to do the heavy lifting](docs/Azure.md)
 * Hey, I can deploy this on my Kubernetes cluster (TBD)
