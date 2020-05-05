@@ -12,7 +12,7 @@ namespace FoldingAtHome.Sample
             Console.WriteLine(team);
 
             foreach (var donor in team.Donors)
-                Console.WriteLine("--{0}", donor);
+                Console.WriteLine("-{0}", donor);
         }
     }
 }
