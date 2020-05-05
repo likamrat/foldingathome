@@ -20,7 +20,7 @@ Example: ```az group create -l westus2 -n Folding-COVID19```
 
 * Now that you have a new RG created, you can go ahead and deploy the VM in a single command: <br>
 
-```az deployment group create --name "folding" --resource-group "Folding-COVID19" --template-uri https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/azuredeploy.json```
+```az group deployment create --name "folding" --resource-group "Folding-COVID19" --template-uri https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/azuredeploy.json```
 
 **Note: Don't forget to match the resource group name based on the one you created**
 
