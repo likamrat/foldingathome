@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <title>$title$</title>
+    <authors>https://github.com/adgroc</authors>
+    <owners>https://github.com/adgroc</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/adgroc/foldingathome</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/adgroc/foldingathome/master/src/sdks/cs/assets/fah.png</iconUrl>
+    <description>Client libary to access the Folding At Home api.</description>
+    <releaseNotes>Pre-release version of library.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+  </metadata>
+</package>

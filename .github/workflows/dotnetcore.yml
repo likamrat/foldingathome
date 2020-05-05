@@ -20,7 +20,7 @@ jobs:
     - name: Test
       run: dotnet test src/sdks/cs/FoldingAtHome.Test/FoldingAtHome.Test.csproj  --no-restore --verbosity normal
     - name: Pack
-      run: dotnet pack src/sdks/cs/FoldingAtHome/FoldingAtHome.csproj -p:PackageVersion=1.0.$GITHUB_RUN_NUMBER  --no-restore --no-build --verbosity normal --output src/sdks/cs/FoldingAtHome/nupkgs
+      run: dotnet pack src/sdks/cs/FoldingAtHome/FoldingAtHome.csproj -p:PackageVersion=0.1.$GITHUB_RUN_NUMBER  --no-restore --no-build --verbosity normal --output src/sdks/cs/FoldingAtHome/nupkgs
     - uses: actions/upload-artifact@v2
       with:
         name: nupkgs
