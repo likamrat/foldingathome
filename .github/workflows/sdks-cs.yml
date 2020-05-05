@@ -1,6 +1,9 @@
-name: .NET Core
+name: Build, test, package, and publish the .net core sdk
 
-on: [push]
+on:
+  push:
+    paths:
+    - 'src/sdks/cs/**'
 
 jobs:
   build:
