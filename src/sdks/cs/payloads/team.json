@@ -1,0 +1,59 @@
+{
+    "wus": 178, 
+    "donors": 
+        [
+            {
+                "wus": 81, 
+                "name": "DevanshiJ810", 
+                "rank": 211327, 
+                "credit": 744206, 
+                "team": 264470, 
+                "id": 143347203
+            }, 
+            {
+                    "wus": 32, 
+                    "credit": 78969, 
+                    "team": 264470, 
+                    "name": "adgroc", 
+                    "id": 141187360
+            }, 
+            {
+                    "wus": 39, 
+                    "credit": 42306, 
+                    "team": 264470, 
+                    "name": "brimoore", 
+                    "id": 140528206}, 
+            {
+                    "wus": 16, 
+                    "credit": 19727, 
+                    "team": 264470, 
+                    "name": "AussiePete", 
+                    "id": 96114683
+            }, 
+            {
+                    "wus": 5, 
+                    "credit": 4500, 
+                    "team": 264470, 
+                    "name": "micya", 
+                    "id": 80773622
+            }, 
+            {
+                    "wus": 5, 
+                    "credit": 4380, 
+                    "team": 264470, 
+                    "name": "anniedanxu", "id": 143733488
+            }
+        ], 
+    "rank": 20780, 
+    "total_teams": 252704, 
+    "active_50": 20, 
+    "logo": null, 
+    "wus_cert": "https://apps.foldingathome.org/awards?team=264470&type=wus", 
+    "credit_cert": "https://apps.foldingathome.org/awards?team=264470&type=score", 
+    "last": "2020-05-04 21:36:09", 
+    "name": "Microsoft-USOCP-8", 
+    "url": null, 
+    "credit": 894090, 
+    "team": 264470, 
+    "path": "team/264470"
+}
