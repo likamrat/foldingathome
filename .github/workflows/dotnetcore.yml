@@ -19,3 +19,10 @@ jobs:
       run: dotnet build src/sdks/cs/FoldingAtHome.Sdk.sln --configuration Release --no-restore
     - name: Test
       run: dotnet test src/sdks/cs/FoldingAtHome.Test/FoldingAtHome.Test.csproj  --no-restore --verbosity normal
+    - name: Pack
+      run: dotnet pack src/sdks/cs/FoldingAtHome/FoldingAtHome.csproj  --no-restore --no-build --verbosity normal --output nupkgs
+    - name: Upload nuget package as an artifact
+    - uses: actions/upload-artifact@v2
+      with:
+        name: nupkgs
+        path: src/sdks/cs/FoldingAtHome/FoldingAtHome/nupkgs
