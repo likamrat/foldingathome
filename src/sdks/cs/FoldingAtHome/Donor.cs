@@ -7,6 +7,8 @@ namespace FoldingAtHome
 {
     public class Donor
     {
+        #region props
+
         [JsonPropertyName("wus")]
         public int WorkUnits { get; set; }
         [JsonPropertyName("name")]
@@ -19,5 +21,7 @@ namespace FoldingAtHome
         public int Team { get; set; }
         [JsonPropertyName("id")]
         public int Id { get; set; }
+
+        #endregion
     }
 }
