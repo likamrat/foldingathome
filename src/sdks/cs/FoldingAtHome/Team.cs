@@ -28,13 +28,13 @@ namespace FoldingAtHome
         public List<Donor> Donors { get; set; }
         
         [JsonProperty("rank")]
-        public int Rank { get; set; }
+        public int? Rank { get; set; }
         
         [JsonProperty("total_teams")]
-        public int TotalTeams { get; set; }
+        public int? TotalTeams { get; set; }
         
         [JsonProperty("active_50")]
-        public int ActiveCpus { get; set; }
+        public int? ActiveCpus { get; set; }
         
         [JsonProperty("last")]
         public DateTime TimeStamp { get; set; }
@@ -43,10 +43,10 @@ namespace FoldingAtHome
         public string Name { get; set; }
         
         [JsonProperty("credit")]
-        public int Score { get; set; }
+        public int? Score { get; set; }
         
         [JsonProperty("team")]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         #endregion
 
