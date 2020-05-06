@@ -8,7 +8,7 @@ In order to track folding activities by team, there is a Power BI report that ex
 
 In addition clicking on any bar in the chart will filter the list down to just the participants with that team.
 
-![](../img/FoldingDashboard.png)
+![](../../img/PowerBI/FoldingDashboard.png)
 
 ## Using the dashboard
 
@@ -17,22 +17,22 @@ The Power BI dashboard is setup to work with a parametrized list of teams.  Plea
 1. Open the file in Power BI desktop
 1. Click on the left navigation to switch to the tabular view of the model
 
-    ![](../img/PowerBI-01.png)
+    ![](../../img/PowerBI/PowerBI-01.png)
 1. Click on the "Transform Data" button and select the "Edit Parameters" button
 
-    ![](../img/PowerBI-02.png)
+    ![](../../img/PowerBI/PowerBI-02.png)
 1. Enter a comma separated list of TeamIds to load, and click "Ok"
 
-    ![](../img/PowerBI-03.png)
+    ![](../../img/PowerBI/PowerBI-03.png)
 
 1. Click "Refresh"
 
 Keep in mind that Power BI Dashbaords are designed to be interactive.   Click on them to explore the data.  For example:
 1. If you'd like to filter the team member list, click on any bar, pie or shape in a chart.
-    ![](../img/ReportFilter.png)
+    ![](../../img/PowerBI/ReportFilter.png)
 
 1. If you'd like to navigate to teh stats page for a specific user, click on the link next to their name.
-    ![](../img/ReportLink.png)
+    ![](../../img/PowerBI/ReportLink.png)
 
 ## Notes
 
