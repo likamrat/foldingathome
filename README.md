@@ -25,6 +25,12 @@ I have created multiple instructions on how to deploy the FAH client based on th
 * [I want to use a "Ready-to-go" Azure VM to do the heavy lifting](docs/Azure.md)
 * Hey, I can deploy this on my Kubernetes cluster (TBD)
 
+## Dashboards
+
+While there are several statistics reports avaialble at http://stats.foldingathome.org, you may want to explore the data in other more graphical formats.  There are several tools avaialbe for data visualization that can leverage the data behind the Folding@Home APIs.  
+
+* [Folding Power BI Dashboard](dashboards/README.md)
+
 ## Contributing
 
 Please contribute in any way possible and do what make sense to you. The COVID-19 is hitting hard on all of us and we are all in this together! If you have creative ideas please open a pull request or shoot me an email to likamrat@microsoft.com. 
