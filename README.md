@@ -29,7 +29,7 @@ I have created multiple instructions on how to deploy the FAH client based on th
 
 While there are several statistics reports avaialble at http://stats.foldingathome.org, you may want to explore the data in other more graphical formats.  There are several tools avaialbe for data visualization that can leverage the data behind the Folding@Home APIs.  
 
-* [Folding Power BI Dashboard](dashboards/README.md)
+* [Folding Power BI Dashboard](dashboards/PowerBI/README.md)
 
 ## Contributing
 
