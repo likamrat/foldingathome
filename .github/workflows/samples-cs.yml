@@ -1,4 +1,4 @@
-name: Build the .net core sample app
+name: .net core sample app
 
 on:
   push:

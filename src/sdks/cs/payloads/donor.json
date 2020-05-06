@@ -1,0 +1,26 @@
+{
+    "wus": 75, 
+    "rank": 285561, 
+    "total_users": 2677415, 
+    "active_50": 9, 
+    "path": "donor/adgroc", 
+    "wus_cert": "https://apps.foldingathome.org/awards?user=141187360&type=wus", 
+    "id": 141187360, 
+    "credit_cert": "https://apps.foldingathome.org/awards?user=141187360&type=score", 
+    "last": "2020-05-06 16:36:05", 
+    "name": "adgroc", 
+    "teams": 
+    [
+        {
+            "wus": 75, 
+            "last": "2020-05-06 16:36:05", 
+            "uid": 141187360, 
+            "active_50": 9, 
+            "active_7": 9, 
+            "credit": 345006, 
+            "team": 264470, 
+            "name": "Microsoft-USOCP-8"
+        }
+    ], 
+    "active_7": 9, 
+    "credit": 345006}

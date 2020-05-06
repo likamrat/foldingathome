@@ -1,4 +1,4 @@
-name: Build, test, package, and publish the .net core sdk
+name: .net core sdk
 
 on:
   push:
