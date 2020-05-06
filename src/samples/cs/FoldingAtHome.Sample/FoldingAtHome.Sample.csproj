@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FoldingAtHome" Version="0.2.2" />
+    <PackageReference Include="FoldingAtHome" Version="0.2.3" />
   </ItemGroup>
 
 </Project>
