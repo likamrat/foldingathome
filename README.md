@@ -23,6 +23,7 @@ I have created multiple instructions on how to deploy the FAH client based on th
 * [I have an Ubuntu Server which I want to use and start folding](docs/UbuntuServer.md)
 * [I don't want to install anything locally but I'm cool with deploying a Docker container](docs/Docker.md)
 * [I want to use a "Ready-to-go" Azure VM to do the heavy lifting](docs/Azure.md)
+* [I want to deploy to an Azure VM scale set or to another cloud using cloud-init](docs/CloudInit.md)
 * Hey, I can deploy this on my Kubernetes cluster (TBD)
 
 ## Dashboards
