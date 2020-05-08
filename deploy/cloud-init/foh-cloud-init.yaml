@@ -1,0 +1,48 @@
+#cloud-config
+
+packages:
+- wget
+- bzip2
+
+users:
+- name: folding
+  inactive: true
+  system: true
+
+write_files:
+- content: |
+    <config>
+      <user value="bleemus"/>
+      <team value="999"/>
+      <passkey value="1b965a0bddb44f751b965a0bddb44f75"/>
+      <power value="full"/>
+      <gpu value="false"/>
+      <smp value="true"/>
+      <fold-anon value="false"/>
+      <gui-enabled value="false"/>
+    </config>
+  path: /opt/foldingathome/config.xml
+- content: |
+    [Unit]
+    Description=FoldingATHome
+    After=network.target
+    StartLimitIntervalSec=0
+    [Service]
+    Type=simple
+    Restart=always
+    RestartSec=1
+    User=folding
+    WorkingDirectory=/opt/foldingathome
+    ExecStart=/opt/foldingathome/FAHClient --verbose
+    ExecStop=/opt/foldingathome/FAHClient --send
+    [Install]
+    WantedBy=multi-user.target
+  path: /etc/systemd/system/foldingathome.service
+
+runcmd:
+- [ wget, "https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/latest.tar.bz2", -O, /run/fahclient.tar.bz2 ]
+- [ tar, -xjf, "/run/fahclient.tar.bz2", -C, "/opt/foldingathome", --strip-components=1 ]
+- [ chown, -R, "folding:folding", "/opt/foldingathome" ]
+- [ systemctl, daemon-reload ]
+- [ systemctl, enable, foldingathome.service ]
+- [ systemctl, start, foldingathome.service ]
