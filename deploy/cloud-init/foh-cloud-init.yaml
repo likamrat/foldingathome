@@ -12,9 +12,9 @@ users:
 write_files:
 - content: |
     <config>
-      <user value="bleemus"/>
+      <user value="Anonymous"/>
       <team value="999"/>
-      <passkey value="1b965a0bddb44f751b965a0bddb44f75"/>
+      <passkey value=""/>
       <power value="full"/>
       <gpu value="false"/>
       <smp value="true"/>
