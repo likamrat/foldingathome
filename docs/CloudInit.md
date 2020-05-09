@@ -45,3 +45,18 @@ Example: ```az group create -l eastus -n Folding-COVID19```
 ```az vmss create --name "folding" --resource-group "Folding-COVID19" --image Canonical:UbuntuServer:18.04-LTS:latest --custom-data foh-cloud-init.yaml --vm-sku Standard_F2 --generate-ssh-keys```
 
 Go to the documents on [UbuntuServer](docs/UbuntuServer.md) and [Azure](docs/Azure.md) for more information.
+
+# Using Google Compute Engine Portal
+
+* Under VM Instances, choose Create Instance
+
+* Under Boot Disk, change Operating System to Ubuntu and Version to Ubuntu 18.04 LTS
+
+![](../img/ci_gcp_01.png)
+![](../img/ci_gcp_02.png)
+
+* Expand Management, security, disks, networking, sole tenancy
+
+* In Metadata, add Key value ```user-data``` and copy the entirity of the cloud-init script to Value
+
+![](../img/ci_gcp_03.png)
