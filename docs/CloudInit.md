@@ -20,7 +20,7 @@ Create a VM or VM Scale Set utilizing the Ubuntu 18.04 LTS image, set up with al
 
 ![](../img/CloudInit/ci_03.png)
 
-Copy and paste the entirity of the foh-cloud-init.yaml into the Custom data field.
+Copy and paste the entirity of the [foh-cloud-init.yaml](../deploy/cloud-init/foh-cloud-init.yaml) into the Custom data field.
 
 ![](../img/CloudInit/ci_04.png)
 
