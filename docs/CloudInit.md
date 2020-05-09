@@ -52,11 +52,11 @@ Go to the documents on [UbuntuServer](docs/UbuntuServer.md) and [Azure](docs/Azu
 
 * Under Boot Disk, change Operating System to Ubuntu and Version to Ubuntu 18.04 LTS
 
-![](../img/ci_gcp_01.png)
-![](../img/ci_gcp_02.png)
+![](../img/CloudInit/ci_gcp_01.png)
+![](../img/CloudInit/ci_gcp_02.png)
 
 * Expand Management, security, disks, networking, sole tenancy
 
 * In Metadata, add Key value ```user-data``` and copy the entirity of the cloud-init script to Value
 
-![](../img/ci_gcp_03.png)
+![](../img/CloudInit/ci_gcp_03.png)
