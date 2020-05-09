@@ -60,3 +60,11 @@ Go to the documents on [UbuntuServer](docs/UbuntuServer.md) and [Azure](docs/Azu
 * In Metadata, add Key value ```user-data``` and copy the entirity of the cloud-init script to Value
 
 ![](../img/CloudInit/ci_gcp_03.png)
+
+# Using AWS Portal
+
+* Create EC2 Instance with Ubuntu 18.04.
+
+* Under Step 3: Configure Instance Details, copy entirety of cloud-init script into Advanced Details/User Data
+
+![](../img/CloudInit/ci_aws_01.png)
