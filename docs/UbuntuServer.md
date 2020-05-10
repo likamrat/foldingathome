@@ -34,13 +34,28 @@ Configure the FAHClient to start automatically.
 
 By default, the web configuration client is not available remotely.  To view the status and change the configuration of the FAHClient, it is necessary to configure remote access.
 
-Add the following to the end of the configuration located at ```/etc/fahclient/config.xml```, replacing x.x.x.x with the IP address of the computer which should be granted remote access.
+To stop the FAHClient prior to editing the config, run the following command.
+
+```sudo /etc/init.d/FAHClient stop```
+
+Add the following to the end of the configuration located at ```/etc/fahclient/config.xml```, replacing x.x.x.x with the IP address of the computer which should be granted remote access.  To allow remote access everywhere, replace x.x.x.x with 0/0.  To allow remote access to a subnet, specify the address using CIDR notation (ie 192.168.0/24).
 
 ```
 <!-- Grant Remote Access -->
 <allow>127.0.0.1 x.x.x.x</allow>
 <web-allow>127.0.0.1 x.x.x.x</web-allow>
 ```
+
+***Tip***: If you are unfamiliar with editing files in Linux via CLI, you can use the following commands.
+
+```sudo vi /etc/fahclient/config.xml```
+Type ```i``` to enter insert mode.  Make any necessary changes.
+Press ```Esc``` to exit insert mode.
+Type ```:wq``` to save and exit.
+
+To start the FAHClient when finished editing the config, run the following command.
+
+```sudo /etc/init.d/FAHClient stop```
 
 ***Note***: When editing the config.xml file for the first time, the file may be modified by the FAHClient before you can save your changes.  If this happens, close and reopen the config.xml file before adding and saving your changes.
 
