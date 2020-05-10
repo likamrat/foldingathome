@@ -48,12 +48,9 @@ Add the following to the end of the configuration located at ```/etc/fahclient/c
 
 ***Tip***: If you are unfamiliar with editing files in Linux via CLI, you can use the following commands.
 
-```sudo vi /etc/fahclient/config.xml```
-
-Type ```i``` to enter insert mode.  Make any necessary changes.
-
-Press ```Esc``` to exit insert mode.
-
+```sudo vi /etc/fahclient/config.xml```<br />
+Type ```i``` to enter insert mode.  Make any necessary changes.<br />
+Press ```Esc``` to exit insert mode.<br />
 Type ```:wq``` to save and exit.
 
 To start the FAHClient when finished editing the config, run the following command.
