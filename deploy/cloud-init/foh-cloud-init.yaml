@@ -5,6 +5,7 @@ packages:
 - bzip2
 
 users:
+- default
 - name: folding
   inactive: true
   system: true
