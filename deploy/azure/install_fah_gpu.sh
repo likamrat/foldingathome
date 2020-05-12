@@ -2,7 +2,7 @@
 
 sudo apt-get update
 
-export VERSION="v7.5"
+export VERSION="v7.6"
 
 sudo mkdir -p /opt/fahclient && \
     # download and untar
