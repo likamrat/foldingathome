@@ -26,7 +26,7 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
   <passkey value=""/>       <!-- 32 hexadecimal characters if provided -->
 
   <power value="full"/>
-  <gpu value="false"/>      <!-- If true, attempt to autoconfigure GPUs -->
+  <gpu value="true"/>      <!-- If true, attempt to autoconfigure GPUs -->
   <smp value="true"/>
   <fold-anon value="false"/>
 
@@ -60,8 +60,12 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     If you would like to grant remote Web access then you need these two
     configuration lines: -->
 
+
     <!-- HTTP Server -->
     <!-- Web Server -->
+
+    <slot id="0" type="CPU"/>
+    <slot id="1" type="GPU"/>
 
     <allow v='127.0.0.1 0/0'/>
     <web-allow v='127.0.0.1 0/0'/>
