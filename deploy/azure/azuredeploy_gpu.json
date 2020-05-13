@@ -228,6 +228,23 @@
         }
       },
       {
+        "name": "GPUDriverExtension",
+        "type": "Microsoft.Compute/virtualMachines/extensions",
+        "apiVersion": "2015-06-15",
+        "location": "[parameters('location')]",
+        "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', [parameters('vmName')])]"
+        ],
+        "properties": {
+          "publisher": "Microsoft.HpcCompute",
+          "type": "NvidiaGpuDriverLinux",
+          "typeHandlerVersion": "1.2",
+          "autoUpgradeMinorVersion": true,
+          "settings": {
+          }
+        }
+      },
+      {
         "type": "Microsoft.Compute/virtualMachines/extensions",
         "name": "[concat(parameters('vmName'),'/installscript')]",
         "apiVersion": "2019-07-01",

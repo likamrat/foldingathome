@@ -1,34 +1,22 @@
 #!/bin/bash
 
+sudo apt-get update
+
 export VERSION="v7.6"
-export CUDA_REPO_PKG="cuda-repo-ubuntu1604_10.0.130-1_amd64.deb"
 
 sudo mkdir -p /opt/fahclient && \
-sudo mkdir -p /opt/cuda && \
-
-
-#download and install Nvidia GPU Drivers
-wget -O /tmp/cuda http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/${CUDA_REPO_PKG} 
-sudo dpkg -i /tmp/cuda
-sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub 
-#rm -f /tmp/${CUDA_REPO_PKG}
-sudo apt-get update
-sudo apt-get install cuda-drivers
-
-# download and untar
+    # download and untar
 sudo apt-get install -y wget bzip2 && \
 sudo wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/${VERSION}/latest.tar.bz2 -O /tmp/fahclient.tar.bz2 && \
 sudo tar -xjf /tmp/fahclient.tar.bz2 -C /opt/fahclient --strip-components=1 && \
-
-# fix permissions
+    # fix permissions
 sudo chown -R folding:folding /opt/fahclient && \
-
-# cleanup
-#sudo rm -rf /tmp/fahclient.tar.bz2 && \
-#sudo apt-get purge -y wget bzip2 && \
-#sudo apt-get clean autoclean && \
-#sudo apt-get autoremove --yes && \
-#sudo rm -rf /var/lib/apt/lists/* 
+    # cleanup
+sudo rm -rf /tmp/fahclient.tar.bz2 && \
+sudo apt-get purge -y wget bzip2 && \
+sudo apt-get clean autoclean && \
+sudo apt-get autoremove --yes && \
+sudo rm -rf /var/lib/apt/lists/* 
 
 sudo cat <<EOT >> /opt/fahclient/config.xml
 <config>
