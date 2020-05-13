@@ -46,7 +46,7 @@ If you examine the performance you can now see that you're using a little over 8
 
 ![](../img/Azure/perf_01gpu.png)
 
-From the shell on the machine running the 'nvidia-smi' command will show statistics about the GPU, and indicate that the GPU is being 100% utilized.
+From the shell on the machine running the ```nvidia-smi``` command will show statistics about the GPU, and indicate that the GPU is being 100% utilized.
 
 ![](../img/Azure/perf_02gpu.png)
 
