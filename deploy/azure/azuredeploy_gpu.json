@@ -233,7 +233,7 @@
         "apiVersion": "2015-06-15",
         "location": "[parameters('location')]",
         "dependsOn": [
-          "[concat('Microsoft.Compute/virtualMachines/', [parameters('vmName')])]"
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('vmName')])]"
         ],
         "properties": {
           "publisher": "Microsoft.HpcCompute",
