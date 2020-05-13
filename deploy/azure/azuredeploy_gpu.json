@@ -229,7 +229,7 @@
       },
       {
         "name": "GPUDriverExtension",
-        "type": "Microsoft.Compute/virtualMachines/extensions",
+        "type": "extensions",
         "apiVersion": "2015-06-15",
         "location": "[parameters('location')]",
         "dependsOn": [
