@@ -20,9 +20,17 @@ Example: ```az group create -l westus2 -n Folding-COVID19```
 
 * Now that you have a new RG created, you can go ahead and deploy the VM in a single command: <br>
 
-```az deployment group create --name "folding" --resource-group "Folding-COVID19" --template-uri https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/azuredeploy.json```
+```az deployment group create --name "folding" --resource-group "Folding-COVID19" --template-uri https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/azuredeploy.json --parameters https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/azuredeploy.parameters.json```
 
 **Note: Don't forget to match the resource group name based on the one you created**
+
+# Advanced VM Deployment
+
+The ARM Template leverages a parameters file with preconfigured values for things like username and password.   While you can clone this repo and make the necessary modifications to the files to override the defaults, there is a quicker path leveraging the same ```--parameters``` cli argument.  For example, the following command would do the same deployment with a customized username and password:
+
+```az deployment group create --name "folding" --resource-group "Folding-COVID19" --template-uri https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/azuredeploy.json --parameters adminUsername="<some username>" adminPasswordOrKey="<some strong password>" ```
+
+**Note:  You'll need to replace ```<some username>``` and ```<some strong password>``` with your own values.**
 
 ![](../img/Azure/az_01.png)
 
