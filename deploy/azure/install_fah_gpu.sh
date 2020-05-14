@@ -36,7 +36,7 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
   <web-allow v='127.0.0.1 0/0'/>
   
   <slot id="0" type="CPU"/>
-  <slot id="1" type="GPU"/>  
+  <slot id="-1" type="GPU"/>  
 </config>
 EOT
 
