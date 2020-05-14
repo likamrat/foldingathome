@@ -232,7 +232,7 @@
           "typeHandlerVersion": "2.1",
           "autoUpgradeMinorVersion": true,
           "settings": {
-            "fileUris": ["https://raw.githubusercontent.com/chmitch/foldingathome/master/deploy/azure/install_fah_gpu.sh"],  
+            "fileUris": ["https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/install_fah_gpu.sh"],  
             "commandToExecute": "sh install_fah_gpu.sh"
           }
         }
