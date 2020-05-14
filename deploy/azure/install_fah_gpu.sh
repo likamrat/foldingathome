@@ -16,11 +16,11 @@ sudo tar -xjf /tmp/fahclient.tar.bz2 -C /opt/fahclient --strip-components=1 && \
     # fix permissions
 sudo chown -R folding:folding /opt/fahclient && \
     # cleanup
-#sudo rm -rf /tmp/fahclient.tar.bz2 && \
-#sudo apt-get purge -y wget bzip2 && \
-#sudo apt-get clean autoclean && \
-#sudo apt-get autoremove --yes && \
-#sudo rm -rf /var/lib/apt/lists/* 
+sudo rm -rf /tmp/fahclient.tar.bz2 && \
+sudo apt-get purge -y wget bzip2 && \
+sudo apt-get clean autoclean && \
+sudo apt-get autoremove --yes && \
+sudo rm -rf /var/lib/apt/lists/* 
 
 sudo cat <<EOT >> /opt/fahclient/config.xml
 <config>
