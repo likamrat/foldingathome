@@ -12,11 +12,11 @@ sudo tar -xjf /tmp/fahclient.tar.bz2 -C /opt/fahclient --strip-components=1 && \
     # fix permissions
 sudo chown -R folding:folding /opt/fahclient && \
     # cleanup
-#sudo rm -rf /tmp/fahclient.tar.bz2 && \
-#sudo apt-get purge -y wget bzip2 && \
-#sudo apt-get clean autoclean && \
-#sudo apt-get autoremove --yes && \
-#sudo rm -rf /var/lib/apt/lists/* 
+sudo rm -rf /tmp/fahclient.tar.bz2 && \
+sudo apt-get purge -y wget bzip2 && \
+sudo apt-get clean autoclean && \
+sudo apt-get autoremove --yes && \
+sudo rm -rf /var/lib/apt/lists/* 
 
 sudo cat <<EOT >> /opt/fahclient/config.xml
 <config>
@@ -49,7 +49,8 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     the following: -->
 
        <allow v='127.0.0.1 0/0'/>
-      <!-- <password>PASS</password> -->
+       <web-allow v='127.0.0.1 0/0'/>
+  <!-- <password>PASS</password> -->
 
     <!-- Where x.x.x.x is the IP address of the computer which should be granted
     remote access and PASS is you choose to further secure the connection.
@@ -66,8 +67,7 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     <slot id="0" type="CPU"/>
     <slot id="1" type="GPU"/>
 
-    <web-allow v='127.0.0.1 0/0'/>
-
+    
 </config>
 EOT
 
