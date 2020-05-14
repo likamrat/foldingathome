@@ -27,7 +27,6 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
 
   <power value="full"/>
   <gpu value="true"/>      <!-- If true, attempt to autoconfigure GPUs -->
-  <!--<smp value="true"/>-->
   <fold-anon value="false"/>
 
   <!-- Folding Slots
@@ -67,7 +66,6 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     <slot id="0" type="CPU"/>
     <slot id="1" type="GPU"/>
 
-    <allow v='127.0.0.1 0/0'/>
     <web-allow v='127.0.0.1 0/0'/>
 
 </config>
