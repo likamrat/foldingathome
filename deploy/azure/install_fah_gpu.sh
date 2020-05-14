@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #install the latest nvidia gpu drivers
-sudo add-apt-repository ppa:graphics-drivers
+sudo add-apt-repository -y ppa:graphics-drivers
 sudo apt-get install -y nvidia-driver-430
 sudo apt install -y ocl-icd-opencl-dev
 sudo apt-get update
