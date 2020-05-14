@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#install the latest nvidia gpu drivers
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt-get install nvidia-driver-430
+sudo apt install ocl-icd-opencl-dev
 sudo apt-get update
 
 export VERSION="v7.6"
@@ -12,11 +16,11 @@ sudo tar -xjf /tmp/fahclient.tar.bz2 -C /opt/fahclient --strip-components=1 && \
     # fix permissions
 sudo chown -R folding:folding /opt/fahclient && \
     # cleanup
-sudo rm -rf /tmp/fahclient.tar.bz2 && \
-sudo apt-get purge -y wget bzip2 && \
-sudo apt-get clean autoclean && \
-sudo apt-get autoremove --yes && \
-sudo rm -rf /var/lib/apt/lists/* 
+#sudo rm -rf /tmp/fahclient.tar.bz2 && \
+#sudo apt-get purge -y wget bzip2 && \
+#sudo apt-get clean autoclean && \
+#sudo apt-get autoremove --yes && \
+#sudo rm -rf /var/lib/apt/lists/* 
 
 sudo cat <<EOT >> /opt/fahclient/config.xml
 <config>
@@ -39,7 +43,7 @@ sudo cat <<EOT >> /opt/fahclient/config.xml
     or
 
       <slot id="0" type="CPU"/>
-      <slot id="1" type="GPU"/>
+      <slot id="-1" type="GPU"/>
 
     All slots in a configuration MUST have unique ids.
    -->
