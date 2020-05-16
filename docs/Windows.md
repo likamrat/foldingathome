@@ -48,7 +48,7 @@ In the screenshot below, you can how moving the Power level to "Full" hitting al
 
 ![](../img/Windows/cpu.png)
 
-# Why is my GPU missing?
+# What if my GPU missing?
 
 The FAH client only supports NVIDIA or AMD GPUs and does not support integrated GPUs.  If your system has both an integrated GPU and a discrete NVIDIA/AMD GPU, the FAH client may not automatically configure the discrete GPU.
 
