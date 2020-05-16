@@ -48,6 +48,36 @@ In the screenshot below, you can how moving the Power level to "Full" hitting al
 
 ![](../img/Windows/cpu.png)
 
+# Why is my GPU missing?
+
+The FAH client only supports NVIDIA or AMD GPUs and does not support integrated GPUs.  If your system has both an integrated GPU and a discrete NVIDIA/AMD GPU, the FAH client may not automatically configure the discrete GPU.
+
+To configure your GPU, right click the FAH client in the system tray and click **Advanced Control**.
+
+![](../img/Windows/fahclient-advanced-control.png)
+
+Click **Configure**
+
+![](../img/Windows/fahclient-configure-button.png)
+
+Click the **Slots** tab and click **Add**.
+
+![](../img/Windows/fahclient-slots.png)
+
+Click the **GPU** option and click **OK**.
+
+![](../img/Windows/fahclient-add-slot.png)
+
+Click **Save**.
+
+![](../img/Windows/fahclient-slots-gpu.png)
+
+Finally, confirm the new GPU slot was added successfully.
+
+![](../img/Windows/fahclient-advanced-control-gpu.png)
+
+***Note***: If your GPU was not added successfully, it may not have been detected during the install or may not be supported yet.  Consider closing the FAH client, deleting the FAH client configuration at ```%appdata%\FAHClient```, and attempting to install the latest FAH client.
+
 # I closed my browser and I want to re-open the web client page
 
 No problem! just put http://localhost:7396/ or http://127.0.0.1:7396/ and you are good to go again. 
