@@ -194,9 +194,6 @@
           },
           "priority": "Spot",
           "evictionPolicy": "Deallocate",
-          "billingProfile": {
-              "maxPrice": 0.12267
-          },
           "storageProfile": {
             "imageReference": {
               "publisher": "[variables('imagePublisher')]",
