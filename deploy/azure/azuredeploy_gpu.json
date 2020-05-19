@@ -18,7 +18,7 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_NC6_Promo",
+        "defaultValue": "Standard_NC6",
         "metadata": {
           "description": "The size of the virtual machines used when provisioning"
         }
@@ -191,6 +191,11 @@
             "adminUsername": "[parameters('adminUsername')]",
             "adminPassword": "[parameters('adminPasswordOrKey')]",
             "linuxConfiguration": "[if(equals(parameters('authenticationType'), 'password'), json('null'), variables('linuxConfiguration'))]"
+          },
+          "priority": "Spot",
+          "evictionPolicy": "Deallocate",
+          "billingProfile": {
+              "maxPrice": 0.12267
           },
           "storageProfile": {
             "imageReference": {
