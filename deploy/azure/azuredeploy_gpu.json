@@ -18,19 +18,9 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_NC6_Promo",
+        "defaultValue": "Standard_NC6",
         "metadata": {
           "description": "The size of the virtual machines used when provisioning"
-        }
-      },
-      "ubuntuOSVersion": {
-        "type": "string",
-        "defaultValue": "18.04-LTS",
-        "allowedValues": [
-          "18.04-LTS"
-        ],
-        "metadata": {
-          "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
         }
       },
       "location": {
@@ -62,6 +52,7 @@
     "variables": {
       "imagePublisher": "Canonical",
       "imageOffer": "UbuntuServer",
+      "imageSku": "18.04-LTS",
       "nicName": "FAM-NIC",
       "nsgName": "FAM-NSG",
       "addressPrefix": "10.0.0.0/16",
@@ -201,11 +192,13 @@
             "adminPassword": "[parameters('adminPasswordOrKey')]",
             "linuxConfiguration": "[if(equals(parameters('authenticationType'), 'password'), json('null'), variables('linuxConfiguration'))]"
           },
+          "priority": "Spot",
+          "evictionPolicy": "Deallocate",
           "storageProfile": {
             "imageReference": {
               "publisher": "[variables('imagePublisher')]",
               "offer": "[variables('imageOffer')]",
-              "sku": "[parameters('ubuntuOSVersion')]",
+              "sku": "[variables('imageSku')]",
               "version": "latest"
             },
             "osDisk": {
@@ -241,7 +234,7 @@
           "typeHandlerVersion": "2.1",
           "autoUpgradeMinorVersion": true,
           "settings": {
-            "fileUris": ["https://raw.githubusercontent.com/likamrat/foldingathome/master/deploy/azure/install_fah_gpu.sh"],  
+            "fileUris": ["https://raw.githubusercontent.com/chmitch/foldingathome/master/deploy/azure/install_fah_gpu.sh"],  
             "commandToExecute": "sh install_fah_gpu.sh"
           }
         }

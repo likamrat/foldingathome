@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName":{
+            "value": "FAM"
+        },
+        "adminUsername": {
+            "value": "folding"
+        },
+        "adminPasswordOrKey": {
+            "value": "MSFolding999"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "vmSize": {
+            "value": "Standard_F4s_v2"
+        }
+    }
+}
