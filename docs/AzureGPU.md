@@ -1,6 +1,6 @@
 # Prerequisites
 
-Deploying FAH on an Azure virtual machine is easy. Rather you are a Windows, MacOs or Linux user, all you really need is to [install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). 
+Deploying FAH on an Azure virtual machine is easy. Rather you are a Windows, MacOs or Linux user, all you really need is to [install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Azure CLI should be running version 2.6.0 or later. Use ```az --version``` to check your current installed version.
 
 The GPU VM is an Ubuntu Server 18.04 based image and will be deployed as an Azure "Standard_NC6_Promo" VM.  This VM class is a great value for GPU Enabled VMS and will enable GPU Folding on Azure. 
 
