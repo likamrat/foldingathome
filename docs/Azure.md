@@ -1,6 +1,6 @@
 # Prerequisites
 
-
+Deploying FAH on an Azure virtual machine is easy. Rather you are a Windows, MacOs or Linux user, all you really need is to [install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Azure CLI should be running version 2.6.0 or later. Use ```az --version``` to check your current installed version.
 
 The VM is Ubuntu Server 18.04 based image and will be deployed as an Azure "Standard_F4s_v2" VM which is a great fit for such a CPU-intense workload. 
 
