@@ -6,7 +6,7 @@ The bot is created based on the Azure Conversational AI Technologies including Q
 
 [Please use this application URL to access Chat Bot](https://fahfrontend.azurewebsites.net)
 
-![Bot GIF](../img/Bot/FAHBot.gif)
+![gif](../img/Bot/FAHbot.gif)
 
 ## Why did I created this bot?
 I wanted to contribute to the effort of folding@home project, and helping other contributers to learn more about this project by providing a chat bot which can quickly finding the Foldign@home releted FAQs. Also, I would like shared the knowledge about how did I created this chat bot. 
