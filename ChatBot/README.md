@@ -8,8 +8,8 @@ The bot is created based on the Azure Conversational AI Technologies including Q
 
 ![gif](../img/Bot/FAHbot.gif)
 
-## Why did I created this bot?
-I wanted to contribute to the effort of folding@home project, and helping other contributers to learn more about this project by providing a chat bot which can quickly finding the Foldign@home releted FAQs. Also, I would like shared the knowledge about how did I created this chat bot. 
+## Why did I create this bot?
+I wanted to contribute to the effort of folding@home project, and helping other contributors to learn more about this project by providing a chat bot which can quickly finding the Folding@Home related FAQs. Also, I would like shared the knowledge about how did I created this chat bot. 
 
 ## How did I created this chatbot
 
@@ -40,7 +40,8 @@ I wanted to contribute to the effort of folding@home project, and helping other 
 
 11. Then, you can use FAHChatBot sample bot in this repository to create your own bot based on the knowledge base you have just created. 
 
-12. Open the FAHChatBot in Visual Studio, and open the appsetting.json file, update your knowledge base information in follow section of the appsetting.json file.
+12. Open the FAHChatBot in Visual Studio, and open the *appsetting.json* file, update your knowledge base information in follow section of the *appsetting.json* file.
+
 ```
   "QnAKnowledgebaseId": "",
   "QnAAuthKey": "",
@@ -50,5 +51,3 @@ I wanted to contribute to the effort of folding@home project, and helping other 
 12. You can run your project locally, and test the bot in bot emulator [(install bot emulator)](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
 
 13. (optional) Then you can choose to deploy your bot to azure. [Here is the instruction on how to deploy](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
-
-
