@@ -37,6 +37,6 @@ To help answering Folding@Home FAQ, you can use the [Chat Bot](ChatBot/README.md
 
 ## Contributing
 
-Please contribute in any way possible and do what make sense to you. The COVID-19 is hitting hard on all of us and we are all in this together! If you have creative ideas please open a pull request or shoot me an email to likamrat@microsoft.com. 
+Before contributing code, please see the [CONTRIBUTING](CONTRIBUTING.md) guide.
 
-Let's do this!!!
+Issues, PRs and Feature Request have their own templates. Please fill out the whole template.
